@@ -1,6 +1,6 @@
-import { Search } from "./Search.jsx";
-import { Shortlist } from "./Shortlist.jsx";
-
+import { Search } from "./Search.tsx";
+import { Shortlist } from "./Shortlist.tsx";
+import { catsService } from "../services/catsService.ts";
 
 export function SearchAndShortlist() {
   return (

@@ -1,5 +1,5 @@
 import { HeartIcon } from "./HeartIcon.tsx";
-import type { Cat } from "../data/models/cat.ts";
+import type { Cat } from "../models/cat.ts";
 
 type CatCardProps = {
   cat: Cat;

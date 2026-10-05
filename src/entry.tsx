@@ -2,9 +2,9 @@ import { createRoot } from "react-dom/client";
 import { StrictMode } from "react";
 
 import "./css/app.css";
-import { App } from "./App.jsx";
+import { App } from "./App.tsx";
 
-createRoot(document.getElementById("app")).render(
+createRoot(document.getElementById("app")!).render(
   <StrictMode>
     <App />
   </StrictMode>,

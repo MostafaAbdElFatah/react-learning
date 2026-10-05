@@ -1,6 +1,11 @@
 import { HeartIcon } from "./HeartIcon.tsx";
+import type { Cat } from "../models/cat.ts";
 
-export function Shortlist({ shortlist }) {
+type ShortlistProps = {
+  shortlist: Cat[];
+};
+
+export function Shortlist({ shortlist }: ShortlistProps) {
   return (
     <div>
       <h2 className="flex items-center gap-2 font-medium">
