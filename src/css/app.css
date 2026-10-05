@@ -2,4 +2,72 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Like button */
+  --animate-heart-pop: heart-pop 500ms cubic-bezier(0.17, 0.89, 0.32, 1.28) both;
+  --animate-heart-unpop: heart-unpop 250ms ease-out both;
+  --animate-like-ring: like-ring 450ms ease-out both;
+  --animate-like-particle: like-particle 600ms cubic-bezier(0.22, 1, 0.36, 1) 80ms both;
+
+  @keyframes heart-pop {
+    0% {
+      transform: scale(0.2);
+    }
+    45% {
+      transform: scale(1.25);
+    }
+    65% {
+      transform: scale(0.92);
+    }
+    85% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes heart-unpop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.75);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Bubble that expands from the heart and thins out */
+  @keyframes like-ring {
+    0% {
+      transform: scale(0.2);
+      border-width: 14px;
+      border-color: var(--color-pink-500);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      border-width: 0;
+      border-color: var(--color-violet-400);
+      opacity: 0;
+    }
+  }
+
+  /* Dots fly outwards along --angle */
+  @keyframes like-particle {
+    0% {
+      transform: rotate(var(--angle)) translateY(0) scale(0.4);
+      opacity: 1;
+    }
+    40% {
+      transform: rotate(var(--angle)) translateY(calc(var(--distance) * -0.7)) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(var(--angle)) translateY(calc(var(--distance) * -1)) scale(0);
+      opacity: 0;
+    }
+  }
 }

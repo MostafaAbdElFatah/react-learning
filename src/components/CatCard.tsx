@@ -1,4 +1,4 @@
-import { HeartIcon } from "./HeartIcon.tsx";
+import { LikeButton } from "./LikeButton.tsx";
 import type { Cat } from "../models/cat.ts";
 
 type CatCardProps = {
@@ -19,15 +19,7 @@ export function CatCard({ cat }: CatCardProps) {
           <span className="text-slate-300">·</span>
           <p className="text-slate-500">{cat.trait}</p>
         </div>
-        <button className="group">
-          <HeartIcon
-            className={
-              cat.liked
-                ? "fill-pink-500 stroke-none"
-                : "stroke-slate-200 group-hover:stroke-slate-300"
-            }
-          />
-        </button>
+        <LikeButton liked={cat.liked} />
       </div>
     </li>
   );
