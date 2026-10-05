@@ -1,4 +1,4 @@
-import { CatCard } from "./CatCard.tsx";
+import { CatCard } from "./CatCard.jsx";
 
 export function CatsList({ cats }) {
   return (

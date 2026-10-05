@@ -1,4 +1,4 @@
-import { cats } from "../data/cats.ts";
+import { cats } from "../data/cats.js";
 
 export const catsService = {
   get cats() {

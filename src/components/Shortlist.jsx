@@ -1,4 +1,4 @@
-import { HeartIcon } from "./HeartIcon.tsx";
+import { HeartIcon } from "./HeartIcon.jsx";
 
 export function Shortlist({ shortlist }) {
   return (

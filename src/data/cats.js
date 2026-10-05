@@ -1,6 +1,4 @@
-import type { Cat } from "./models/cat.ts";
-
-export const cats: Cat[] = [
+export const cats = [
   {
     id: 1,
     name: "Bella",
