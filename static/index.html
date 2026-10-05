@@ -1,0 +1,1477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dev Cats</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <link
+        rel="preload"
+        as="image"
+        href="https://placecats.com/neo/400/400"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://placecats.com/millie/400/400"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://placecats.com/bella/400/400"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://placecats.com/poppy/400/400"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://placecats.com/louie/400/400"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://placecats.com/neo_banana/400/400"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/500px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/500px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/500px-African_leopard_male_%28cropped%29.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Standing_jaguar.jpg/500px-Standing_jaguar.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Irbis4.JPG/500px-Irbis4.JPG"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/500px-Male_cheetah_facing_left_in_South_Africa.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/500px-Mountain_Lion_in_Glacier_National_Park.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Neofelis_nebulosa%2C_Clouded_leopard.jpg/500px-Neofelis_nebulosa%2C_Clouded_leopard.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://upload.wikimedia.org/wikipedia/commons/8/81/Persialainen.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/M%C3%A2le_Black_Silver_Blotched_Tabby.jpeg/500px-M%C3%A2le_Black_Silver_Blotched_Tabby.jpeg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://upload.wikimedia.org/wikipedia/commons/1/16/Siamese_cat_Vaillante.JPG"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Ragdoll_from_Gatil_Ragbelas.jpg/500px-Ragdoll_from_Gatil_Ragbelas.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Paintedcats_Red_Star_standing.jpg/500px-Paintedcats_Red_Star_standing.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Sphynx_-_cat._img_031.jpg/500px-Sphynx_-_cat._img_031.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Mystica_from_British_Empire_Cattery.jpg/500px-Mystica_from_British_Empire_Cattery.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Scottish_Fold_-_CFF_cat_show_Heinola_2008-05-03_IMG_7882.JPG/500px-Scottish_Fold_-_CFF_cat_show_Heinola_2008-05-03_IMG_7882.JPG"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/500px-Gustav_chocolate.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://upload.wikimedia.org/wikipedia/commons/4/4f/Russian_blue_kitten_%28cropped%29.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Dalaja-Doll-norv%C3%A9gien-ambre-blotched-tabby_avec-blanc_2008_%28cropped%29.jpg/500px-Dalaja-Doll-norv%C3%A9gien-ambre-blotched-tabby_avec-blanc_2008_%28cropped%29.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Birmanstrofe.jpg/500px-Birmanstrofe.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/500px-Savannah_Cat_portrait.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Devon_Rex_Cassini.jpeg/500px-Devon_Rex_Cassini.jpeg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/British_burmese_-_Andel_Alois_at_Cat_show.JPG/500px-British_burmese_-_Andel_Alois_at_Cat_show.JPG"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Turkish_Angora_in_Ankara_Zoo_%28AO%C3%87%29.JPG/500px-Turkish_Angora_in_Ankara_Zoo_%28AO%C3%87%29.JPG"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Ginger_Exotic_Shorthair.jpg/500px-Ginger_Exotic_Shorthair.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Jewelkatz_Romeo_Of_Stalker-Bars.jpg/500px-Jewelkatz_Romeo_Of_Stalker-Bars.jpg"
+      /><link
+        rel="preload"
+        as="image"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Bombay_femelle.JPG/500px-Bombay_femelle.JPG"
+      />
+      <main class="min-h-dvh bg-linear-to-b from-cyan-200 to-white to-[60vh]">
+        <div class="mx-auto max-w-5xl p-4 md:p-8">
+          <header>
+            <a class="group" href="/"
+              ><div class="inline-flex items-center gap-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-16 text-cyan-700 transition group-hover:scale-105 group-hover:-rotate-6 md:h-20 lg:h-24"
+                  aria-label="DevCats"
+                >
+                  <path
+                    d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"
+                  ></path>
+                  <path d="M8 14v.5"></path>
+                  <path d="M16 14v.5"></path>
+                  <path d="M11.25 16.25h1.5L12 17l-.75-.75Z"></path>
+                </svg>
+                <p class="text-lg font-semibold">Dev Cats</p>
+              </div></a
+            >
+            <div class="mt-6">
+              <h1 class="text-lg font-bold">We&#x27;ve got the best cats!</h1>
+              <p class="text-slate-600">
+                Don&#x27;t take our word — let the pictures do the talking :)
+              </p>
+            </div>
+          </header>
+          <div class="mt-24 grid gap-8 sm:grid-cols-2">
+            <div>
+              <label for="search" class="font-medium"
+                >Search for a character trait</label
+              >
+              <div class="mt-2 flex items-center gap-4">
+                <input
+                  placeholder="curious..."
+                  id="search"
+                  type="text"
+                  class="w-full max-w-80 bg-white px-4 py-2 ring ring-black/5 focus:ring-2 focus:ring-cyan-500 focus:outline-none"
+                  name="search"
+                /><button
+                  class="inline-block rounded bg-cyan-300 px-4 py-2 pr-3! pl-2.5! font-medium text-cyan-900 hover:bg-cyan-200 focus:ring-2 focus:ring-cyan-500 focus:outline-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-delete"
+                  >
+                    <path
+                      d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"
+                    ></path>
+                    <path d="m12 9 6 6"></path>
+                    <path d="m18 9-6 6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div>
+              <h2 class="flex items-center gap-2 font-medium">
+                <span>Your shortlist</span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart inline-block size-6 fill-pink-500 stroke-pink-500"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </h2>
+              <ul class="mt-4 flex flex-wrap gap-4">
+                <li
+                  class="relative flex items-center overflow-clip rounded-md bg-white shadow-sm ring ring-black/5 transition duration-100 starting:scale-0 starting:opacity-0"
+                >
+                  <img
+                    height="32"
+                    width="32"
+                    alt="Neo"
+                    class="aspect-square w-8 object-cover"
+                    src="https://placecats.com/neo/400/400"
+                  />
+                  <p class="px-3 text-sm text-slate-800">Neo</p>
+                  <button
+                    class="group h-full border-l border-slate-100 px-2 hover:bg-slate-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-x size-4 stroke-slate-400 group-hover:stroke-red-400"
+                    >
+                      <path d="M18 6 6 18"></path>
+                      <path d="m6 6 12 12"></path>
+                    </svg>
+                  </button>
+                </li>
+                <li
+                  class="relative flex items-center overflow-clip rounded-md bg-white shadow-sm ring ring-black/5 transition duration-100 starting:scale-0 starting:opacity-0"
+                >
+                  <img
+                    height="32"
+                    width="32"
+                    alt="Millie"
+                    class="aspect-square w-8 object-cover"
+                    src="https://placecats.com/millie/400/400"
+                  />
+                  <p class="px-3 text-sm text-slate-800">Millie</p>
+                  <button
+                    class="group h-full border-l border-slate-100 px-2 hover:bg-slate-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-x size-4 stroke-slate-400 group-hover:stroke-red-400"
+                    >
+                      <path d="M18 6 6 18"></path>
+                      <path d="m6 6 12 12"></path>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Bella"
+                src="https://placecats.com/bella/400/400"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Bella</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Queen of the house</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Neo"
+                src="https://placecats.com/neo/400/400"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Neo</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Very good kitty</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart fill-pink-500 stroke-none"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Millie"
+                src="https://placecats.com/millie/400/400"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Millie</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Enjoys naps</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart fill-pink-500 stroke-none"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Poppy"
+                src="https://placecats.com/poppy/400/400"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Poppy</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Loves tuna</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Louie"
+                src="https://placecats.com/louie/400/400"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Louie</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Ready to knock things off tables</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Banana"
+                src="https://placecats.com/neo_banana/400/400"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Banana</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Ready for anything</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Lion"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/500px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Lion</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">King of the savanna</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Tiger"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/500px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Tiger</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Loves a good swim</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Leopard"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/500px-African_leopard_male_%28cropped%29.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Leopard</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Naps in trees</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Jaguar"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Standing_jaguar.jpg/500px-Standing_jaguar.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Jaguar</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Strongest bite in the family</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Snow Leopard"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Irbis4.JPG/500px-Irbis4.JPG"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Snow Leopard</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Ghost of the mountains</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Cheetah"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/500px-Male_cheetah_facing_left_in_South_Africa.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Cheetah</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Fastest on four legs</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Cougar"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/500px-Mountain_Lion_in_Glacier_National_Park.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Cougar</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Purrs instead of roars</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Clouded Leopard"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Neofelis_nebulosa%2C_Clouded_leopard.jpg/500px-Neofelis_nebulosa%2C_Clouded_leopard.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Clouded Leopard</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Climbs down trees head-first</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Persian"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/81/Persialainen.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Persian</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Fluffy and dignified</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Maine Coon"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/M%C3%A2le_Black_Silver_Blotched_Tabby.jpeg/500px-M%C3%A2le_Black_Silver_Blotched_Tabby.jpeg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Maine Coon</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Gentle giant</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Siamese"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/16/Siamese_cat_Vaillante.JPG"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Siamese</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Very talkative</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Ragdoll"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Ragdoll_from_Gatil_Ragbelas.jpg/500px-Ragdoll_from_Gatil_Ragbelas.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Ragdoll</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Goes limp when held</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Bengal"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Paintedcats_Red_Star_standing.jpg/500px-Paintedcats_Red_Star_standing.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Bengal</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Tiny wild one</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Sphynx"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Sphynx_-_cat._img_031.jpg/500px-Sphynx_-_cat._img_031.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Sphynx</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Always seeking warmth</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="British Shorthair"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Mystica_from_British_Empire_Cattery.jpg/500px-Mystica_from_British_Empire_Cattery.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">British Shorthair</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Calm teddy bear</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Scottish Fold"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Scottish_Fold_-_CFF_cat_show_Heinola_2008-05-03_IMG_7882.JPG/500px-Scottish_Fold_-_CFF_cat_show_Heinola_2008-05-03_IMG_7882.JPG"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Scottish Fold</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Sits like a human</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Abyssinian"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/500px-Gustav_chocolate.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Abyssinian</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Curious explorer</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Russian Blue"
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Russian_blue_kitten_%28cropped%29.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Russian Blue</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Shy but loyal</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Norwegian Forest Cat"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Dalaja-Doll-norv%C3%A9gien-ambre-blotched-tabby_avec-blanc_2008_%28cropped%29.jpg/500px-Dalaja-Doll-norv%C3%A9gien-ambre-blotched-tabby_avec-blanc_2008_%28cropped%29.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Norwegian Forest Cat</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Built for snow</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Birman"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Birmanstrofe.jpg/500px-Birmanstrofe.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Birman</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Wears white socks</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Savannah"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/500px-Savannah_Cat_portrait.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Savannah</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Plays fetch</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Devon Rex"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Devon_Rex_Cassini.jpeg/500px-Devon_Rex_Cassini.jpeg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Devon Rex</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Mischievous pixie</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Burmese"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/British_burmese_-_Andel_Alois_at_Cat_show.JPG/500px-British_burmese_-_Andel_Alois_at_Cat_show.JPG"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Burmese</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Velcro lap cat</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Turkish Angora"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Turkish_Angora_in_Ankara_Zoo_%28AO%C3%87%29.JPG/500px-Turkish_Angora_in_Ankara_Zoo_%28AO%C3%87%29.JPG"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Turkish Angora</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Elegant and playful</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Exotic Shorthair"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Ginger_Exotic_Shorthair.jpg/500px-Ginger_Exotic_Shorthair.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Exotic Shorthair</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Lazy Persian in pajamas</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="American Shorthair"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Jewelkatz_Romeo_Of_Stalker-Bars.jpg/500px-Jewelkatz_Romeo_Of_Stalker-Bars.jpg"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">American Shorthair</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Easygoing mouser</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li
+              class="overflow-clip rounded-lg bg-white shadow-md ring ring-black/5 hover:-translate-y-0.5"
+            >
+              <img
+                class="aspect-square object-cover"
+                alt="Bombay"
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Bombay_femelle.JPG/500px-Bombay_femelle.JPG"
+              />
+              <div class="gap flex items-center justify-between p-4 text-sm">
+                <div class="flex items-center gap-2">
+                  <p class="font-semibold">Bombay</p>
+                  <span class="text-slate-300">·</span>
+                  <p class="text-slate-500">Mini black panther</p>
+                </div>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart stroke-slate-200 group-hover:stroke-slate-300"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div
+            class="mt-12 flex items-center justify-between bg-white p-8 shadow ring ring-black/5"
+          >
+            <form class="mt-4 flex w-full flex-col items-start gap-4">
+              <div class="grid w-full gap-6 md:grid-cols-3">
+                <fieldset class="flex w-full flex-col gap-1">
+                  <label for="name">Name</label
+                  ><input
+                    class="max-w-96 rounded-sm bg-white px-2 py-1 ring ring-black/20 focus:ring-2 focus:ring-cyan-500 focus:outline-none"
+                    id="name"
+                    type="text"
+                    name="name"
+                  />
+                </fieldset>
+                <fieldset class="flex w-full flex-col gap-1">
+                  <label for="trait">Personality trait</label
+                  ><input
+                    class="max-w-96 rounded-sm bg-white px-2 py-1 ring ring-black/20 focus:ring-2 focus:ring-cyan-500 focus:outline-none"
+                    id="trait"
+                    type="text"
+                    name="trait"
+                  />
+                </fieldset>
+                <fieldset
+                  disabled=""
+                  class="col-span-2 flex w-full cursor-not-allowed flex-col gap-1 opacity-50"
+                >
+                  <label for="avatar_url">Profile pic</label
+                  ><input
+                    class="max-w-96 rounded-sm bg-white px-2 py-1 ring ring-black/20 focus:ring-2 focus:ring-cyan-500 focus:outline-none"
+                    id="avatar_url"
+                    type="file"
+                    name="avatar_url"
+                  />
+                </fieldset>
+              </div>
+              <button
+                class="mt-4 inline-block rounded bg-cyan-300 px-4 py-2 font-medium text-cyan-900 hover:bg-cyan-200 focus:ring-2 focus:ring-cyan-500 focus:outline-none"
+                type="submit"
+              >
+                Add cat
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
