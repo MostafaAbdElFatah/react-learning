@@ -1,9 +1,7 @@
-import { useState, type CSSProperties } from "react";
+import { use, useState, type CSSProperties } from "react";
 import { Heart } from "lucide-react";
-
-type LikeButtonProps = {
-  liked: boolean;
-};
+import { LikedContext } from "../context/liked-context";
+import type { Cat } from "../models/cat";
 
 // 8 dots around the heart, alternating near/far so the burst feels organic
 const PARTICLES = [
@@ -17,18 +15,21 @@ const PARTICLES = [
   { angle: 315, distance: 18, color: "bg-sky-400" },
 ];
 
-export function LikeButton({ liked }: LikeButtonProps) {
-  const [isLiked, setIsLiked] = useState(liked);
+export function LikeButton({ id }: { id: Cat["id"] }) {
+  const { liked, setLiked } = use(LikedContext)!;
   // Bumped on every click so the animations remount and replay
   const [clicks, setClicks] = useState(0);
+  const isLiked = liked.includes(id);
 
   function toggleLike() {
-    setIsLiked((prev) => !prev);
+    setLiked((prev) =>
+      prev.includes(id) ? prev.filter((catId) => catId !== id) : [...prev, id],
+    );
+
     setClicks((prev) => prev + 1);
   }
 
-  let heartClassName =
-    "stroke-slate-200";//group-hover:stroke-none group-hover:fill-pink-400
+  let heartClassName = "stroke-slate-200"; //group-hover:stroke-none group-hover:fill-pink-400
   if (isLiked) {
     heartClassName = "fill-pink-500 stroke-none";
     if (clicks > 0) heartClassName += " animate-heart-pop";
@@ -51,7 +52,7 @@ export function LikeButton({ liked }: LikeButtonProps) {
           aria-hidden
           className="pointer-events-none absolute inset-0 motion-reduce:hidden"
         >
-          <span className="absolute inset-0 animate-like-ring rounded-full" />
+          <span className="animate-like-ring absolute inset-0 rounded-full" />
           {PARTICLES.map((particle) => (
             <span
               key={particle.angle}
@@ -61,7 +62,7 @@ export function LikeButton({ liked }: LikeButtonProps) {
                   "--distance": `${particle.distance}px`,
                 } as CSSProperties
               }
-              className={`absolute top-1/2 left-1/2 -mt-0.75 -ml-0.75 size-1.5 animate-like-particle rounded-full ${particle.color}`}
+              className={`animate-like-particle absolute top-1/2 left-1/2 -mt-0.75 -ml-0.75 size-1.5 rounded-full ${particle.color}`}
             />
           ))}
         </span>
