@@ -3,5 +3,5 @@ export type Cat = {
   name: string;
   trait: string;
   image: string;
-  liked: boolean;
+  // liked: boolean;
 };

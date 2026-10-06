@@ -19,7 +19,7 @@ export function CatCard({ cat }: CatCardProps) {
           <span className="text-slate-300">·</span>
           <p className="text-slate-500">{cat.trait}</p>
         </div>
-        <LikeButton liked={cat.liked} />
+        <LikeButton id={cat.id} />
       </div>
     </li>
   );

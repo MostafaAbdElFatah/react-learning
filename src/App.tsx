@@ -29,9 +29,9 @@ function Main() {
       <LikedContext value={{ liked, setLiked }}>
         <div className="mt-24 grid gap-8 sm:grid-cols-2">
           <Search />
-          <Shortlist shortlist={catsService.shortlist} />
+          <Shortlist />
         </div>
-        {/* <SearchAndShortlist shortlist={catsService.shortlist} /> */}
+        {/* <SearchAndShortlist /> */}
         <CatsList cats={catsService.cats} />
       </LikedContext>
 
