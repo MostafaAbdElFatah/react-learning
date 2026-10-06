@@ -16,23 +16,21 @@ function getHeartClassName(isLiked: boolean, hasClicked: boolean) {
 }
 
 export function LikeButton({ id }: { id: Cat["id"] }) {
-  const { liked, setLiked } = useLiked();
+  const likedCats = useLiked();
   // Bumped on every click so the animations remount and replay
   const [clicks, setClicks] = useState(0);
-  const isLiked = liked.includes(id);
+  const isLiked = likedCats.isLiked(id);
   const hasClicked = clicks > 0;
 
-  function toggleLike() {
-    setLiked((prev) =>
-      prev.includes(id) ? prev.filter((catId) => catId !== id) : [...prev, id],
-    );
+  function handleClick() {
+    likedCats.toggleLike(id);
     setClicks((prev) => prev + 1);
   }
 
   return (
     <button
       type="button"
-      onClick={toggleLike}
+      onClick={handleClick}
       aria-pressed={isLiked}
       aria-label={isLiked ? "Unlike" : "Like"}
       className="group relative grid size-8 place-items-center rounded-full focus-visible:outline-2 focus-visible:outline-pink-400"

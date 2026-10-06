@@ -7,10 +7,7 @@ type ShortlistItemProps = {
 };
 
 export function ShortlistItem({ cat }: ShortlistItemProps) {
-  const { setLiked } = useLiked();
-  function removeFromShortlist() {
-    setLiked((prev) => prev.filter((catId) => catId !== cat.id));
-  }
+  const { unlike } = useLiked();
 
   return (
     <li className="relative flex items-center overflow-clip rounded-md bg-white shadow-sm ring ring-black/5 transition duration-100 starting:scale-0 starting:opacity-0">
@@ -24,7 +21,7 @@ export function ShortlistItem({ cat }: ShortlistItemProps) {
       <p className="px-3 text-sm text-slate-800">{cat.name}</p>
       <button
         type="button"
-        onClick={removeFromShortlist}
+        onClick={() => unlike(cat.id)}
         aria-label={`Remove ${cat.name} from shortlist`}
         className="group h-full border-l border-slate-100 px-2 hover:bg-slate-100"
       >
