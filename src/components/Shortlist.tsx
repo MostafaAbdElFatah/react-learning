@@ -1,11 +1,13 @@
 import { HeartIcon } from "./HeartIcon.tsx";
 import { ShortlistItem } from "./ShortlistItem.tsx";
 import { useLiked } from "../context/liked-context.ts";
+import { useCats } from "../context/cats-context.ts";
 import { catsService } from "../services/catsService.ts";
 
 export function Shortlist() {
+  const { cats } = useCats();
   const { liked } = useLiked();
-  const shortlist = catsService.getByIds(liked);
+  const shortlist = catsService.getByIds(cats, liked);
 
   return (
     <div>

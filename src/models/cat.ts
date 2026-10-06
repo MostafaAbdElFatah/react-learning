@@ -3,5 +3,7 @@ export type Cat = {
   name: string;
   trait: string;
   image: string;
-  // liked: boolean;
 };
+
+// What the user provides when adding a cat; id and image are assigned by the service
+export type NewCat = Pick<Cat, "name" | "trait">;
