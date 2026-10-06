@@ -8,6 +8,7 @@ import { Search } from "./components/Search.tsx";
 import { Shortlist } from "./components/Shortlist.tsx";
 import { catsService } from "./services/catsService.ts";
 import { LikedProvider } from "./context/LikedProvider.tsx";
+import { useState } from "react";
 
 export function App() {
   return (
@@ -21,15 +22,18 @@ export function App() {
 }
 
 function Main() {
+  const [query, setQuery] = useState("");
+  const filteredCats = catsService.search(query);
+
   return (
     <main>
       <LikedProvider initialLiked={[1, 3, 5]}>
         <div className="mt-24 grid gap-8 sm:grid-cols-2">
-          <Search />
+          <Search query={query} onQueryChange={setQuery} />
           <Shortlist />
         </div>
         {/* <SearchAndShortlist /> */}
-        <CatsList cats={catsService.cats} />
+        <CatsList cats={filteredCats} />
       </LikedProvider>
 
       <NewCatForm />
